@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include <ctype.h>
 
 #include "iniparse.h"
@@ -77,8 +76,6 @@ static int feed(ini_parser* p, const ini_callbacks* cb, char c) {
 		} else if (c == '\n') {
 			return 0;
 		}
-
-		printf("Invalid cahracataijreiajuraikjri '%c'\n", c);
 
 		return -1;
 	case S_SECTION:
